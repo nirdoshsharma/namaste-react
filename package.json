@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "parcel": "^2.12.0",
+    "prettier": "3.3.3",
+    "process": "^0.11.10"
+  },
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Nirdosh",
+
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirdoshsharma/namaste-react.git"
+  },
+  "keywords": [
+    "react",
+    "namaste-react"
+  ],
+  "author": "Nirdosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirdoshsharma/namaste-react/issues"
+  },
+  "homepage": "https://github.com/nirdoshsharma/namaste-react#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
