@@ -9,7 +9,6 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is Namaste React by Nirdosh",
-
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -31,6 +30,7 @@
   "homepage": "https://github.com/nirdoshsharma/namaste-react#readme",
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
   }
 }
