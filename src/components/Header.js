@@ -1,8 +1,9 @@
 import { useState, useContext } from "react";
-import { LOGO_URL } from "../utils/contants";
+import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   // let btnName = "LOG IN"
@@ -10,6 +11,9 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   const { logInUser } = useContext(UserContext);
 
+  // Subscribing to the store using the Selector
+
+  const cartItems = useSelector((store) => store.cart.items);
   return (
     <>
       <div className="flex justify-between items-center bg-pink-50 shadow-lg p-4 h-24 rounded-lg sm:bg-yellow-200">
@@ -44,8 +48,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/cart" className="hover:text-gray-900">
-                Cart
+              <Link to="/cart" className="hover:text-gray-900 font-bold">
+                Cart ({cartItems.length} items)
               </Link>
             </li>
             <li>
